@@ -1,0 +1,32 @@
+Ran: 2026-07-28 20:29:22.104751
+Name,Input Width,Input Bounding Boxes,Input BEV Width,Input BEV Height,Homography,Expected Advice,Expected Lateral,Expected Dist,Actual Advice,Actual Lateral,Actual Dist,Status
+UT_GAI_01,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_02,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.1}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_03,1920,"[{'coords': [100, 1000, 110, 1500], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.890625,0.5,SHIFT RIGHT,-0.890625,0.5,Passed
+UT_GAI_04,1920,"[{'coords': [10, 100, 50, 150], 'conf': 0.8}]",100,150,1,SHIFT RIGHT,-0.4,0,SHIFT RIGHT,-0.4,0.0,Passed
+UT_GAI_05,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,None,SHIFT RIGHT,-0.921875,0.5,SHIFT RIGHT,-0.921875,0.5,Passed
+UT_GAI_06,1920,"[{'coords': [250, 100, 320, 150], 'conf': 0.8}]",320,400,1,SHIFT LEFT,0.78125,0.625,SHIFT LEFT,0.78125,0.625,Passed
+UT_GAI_07,1920,"[{'coords': [1000, 1000, 1640, 1500], 'conf': 0.8}]",320,400,1,SHIFT LEFT,0.375,0.5,SHIFT LEFT,0.375,0.5,Passed
+UT_GAI_08,1920,"[{'coords': [1000, 100, 1640, 150], 'conf': 0.8}]",320,400,None,SHIFT LEFT,0.375,0.5,SHIFT LEFT,0.375,0.5,Passed
+UT_GAI_09,1920,"[{'coords': [140, 100, 180, 150], 'conf': 0.8}]",320,400,1,SLOW DOWN,0,0.625,SLOW DOWN,0.0,0.625,Passed
+UT_GAI_10,1920,"[{'coords': [1000, 1000, 1100, 1500], 'conf': 0.8}]",320,400,1,SLOW DOWN,0.09375,0.5,SLOW DOWN,0.09375,0.5,Passed
+UT_GAI_11,1920,"[{'coords': [1000, 100, 1100, 150], 'conf': 0.8}]",320,400,None,SLOW DOWN,0.09375,0.5,SLOW DOWN,0.09375,0.5,Passed
+UT_GAI_12,1280,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_13,1280,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,None,SHIFT RIGHT,-0.8828125,0.5,SHIFT RIGHT,-0.8828125,0.5,Passed
+
+Ran: 2026-07-28 20:26:26.991815
+Name,Input Width,Input Bounding Boxes,Input BEV Width,Input BEV Height,Homography,Expected Advice,Expected Lateral,Expected Dist,Actual Advice,Actual Lateral,Actual Dist,Status
+UT_GAI_01,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_02,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.1}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_03,1920,"[{'coords': [100, 1000, 110, 1500], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.890625,0.5,SHIFT RIGHT,-0.890625,0.5,Passed
+UT_GAI_04,1920,"[{'coords': [10, 100, 50, 150], 'conf': 0.8}]",100,150,1,SHIFT RIGHT,-0.4,0,SHIFT RIGHT,-0.4,0.0,Passed
+UT_GAI_05,1920,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,None,SHIFT RIGHT,-0.921875,0.5,SHIFT RIGHT,-0.921875,0.5,Passed
+UT_GAI_06,1920,"[{'coords': [250, 100, 320, 150], 'conf': 0.8}]",320,400,1,SHIFT LEFT,0.78125,0.625,SHIFT LEFT,0.78125,0.625,Passed
+UT_GAI_07,1920,"[{'coords': [1000, 1000, 1640, 1500], 'conf': 0.8}]",320,400,1,SHIFT LEFT,0.375,0.5,SHIFT LEFT,0.375,0.5,Passed
+UT_GAI_08,1920,"[{'coords': [1000, 100, 1640, 150], 'conf': 0.8}]",320,400,None,SHIFT LEFT,0.375,0.5,SHIFT LEFT,0.375,0.5,Passed
+UT_GAI_09,1920,"[{'coords': [140, 100, 180, 150], 'conf': 0.8}]",320,400,1,SLOW DOWN,0,0.625,SLOW DOWN,0.0,0.625,Passed
+UT_GAI_10,1920,"[{'coords': [1000, 1000, 1100, 1500], 'conf': 0.8}]",320,400,1,SLOW DOWN,0.09375,0.5,SLOW DOWN,0.09375,0.5,Passed
+UT_GAI_11,1920,"[{'coords': [1000, 100, 1100, 150], 'conf': 0.8}]",320,400,None,SLOW DOWN,0.09375,0.5,SLOW DOWN,0.09375,0.5,Passed
+UT_GAI_12,1280,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,1,SHIFT RIGHT,-0.53125,0.625,SHIFT RIGHT,-0.53125,0.625,Passed
+UT_GAI_13,1280,"[{'coords': [50, 100, 100, 150], 'conf': 0.8}]",320,400,None,SHIFT RIGHT,-0.8828125,0.625,SHIFT RIGHT,-0.8828125,0.5,Failed
+

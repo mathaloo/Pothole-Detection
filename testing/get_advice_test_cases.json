@@ -1,0 +1,184 @@
+[
+    {
+        "name": "UT_GAI_01",
+        "width": 1920,
+        "boxes": [{
+            "coords": [50, 100, 100, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.53125,
+        "exp_dist": 0.625
+    },
+    {
+        "name": "UT_GAI_02",
+        "width": 1920,
+        "boxes": [{
+            "coords": [50, 100, 100, 150],
+            "conf": 0.1
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.53125,
+        "exp_dist": 0.625
+    },
+    {
+        "name": "UT_GAI_03",
+        "width": 1920,
+        "boxes": [{
+            "coords": [100, 1000, 110, 1500],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.890625,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_04",
+        "width": 1920,
+        "boxes": [{
+            "coords": [10, 100, 50, 150],
+            "conf": 0.8
+        }],
+        "bevw": 100,
+        "bevh": 150,
+        "homography": 1,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.4,
+        "exp_dist": 0
+    },
+    {
+        "name": "UT_GAI_05",
+        "width": 1920,
+        "boxes": [{
+            "coords": [50, 100, 100, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": null,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.921875,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_06",
+        "width": 1920,
+        "boxes": [{
+            "coords": [250, 100, 320, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT LEFT",
+        "exp_lateral": 0.78125,
+        "exp_dist": 0.625
+    },
+    {
+        "name": "UT_GAI_07",
+        "width": 1920,
+        "boxes": [{
+            "coords": [1000, 1000, 1640, 1500],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT LEFT",
+        "exp_lateral": 0.375,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_08",
+        "width": 1920,
+        "boxes": [{
+            "coords": [1000, 100, 1640, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": null,
+        "exp_advice": "SHIFT LEFT",
+        "exp_lateral": 0.375,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_09",
+        "width": 1920,
+        "boxes": [{
+            "coords": [140, 100, 180, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SLOW DOWN",
+        "exp_lateral": 0,
+        "exp_dist": 0.625
+    },
+    {
+        "name": "UT_GAI_10",
+        "width": 1920,
+        "boxes": [{
+            "coords": [1000, 1000, 1100, 1500],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SLOW DOWN",
+        "exp_lateral": 0.09375,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_11",
+        "width": 1920,
+        "boxes": [{
+            "coords": [1000, 100, 1100, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": null,
+        "exp_advice": "SLOW DOWN",
+        "exp_lateral": 0.09375,
+        "exp_dist": 0.5
+    },
+    {
+        "name": "UT_GAI_12",
+        "width": 1280,
+        "boxes": [{
+            "coords": [50, 100, 100, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": 1,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.53125,
+        "exp_dist": 0.625
+    },
+    {
+        "name": "UT_GAI_13",
+        "width": 1280,
+        "boxes": [{
+            "coords": [50, 100, 100, 150],
+            "conf": 0.8
+        }],
+        "bevw": 320,
+        "bevh": 400,
+        "homography": null,
+        "exp_advice": "SHIFT RIGHT",
+        "exp_lateral": -0.8828125,
+        "exp_dist": 0.5
+    }
+]
