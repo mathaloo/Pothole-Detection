@@ -6,7 +6,7 @@ from datetime import datetime as dt
 from pathlib import Path
 
 #(Matt): read test cases from JSON and convert to python format
-with open("testing/init_ipm_test_cases.json", "r") as f:
+with open("testing/init_ipm/init_ipm_test_cases.json", "r") as f:
     test_cases = json.load(f)
 
 new_recs = []
@@ -55,7 +55,7 @@ for tc in test_cases:
     pd._bev_buf = None
     pd.ipm_src_pts = None
 
-res_path = Path("testing/results_init_ipm.csv")
+res_path = Path("testing/init_ipm/results_init_ipm.csv")
 old_recs = []
 
 if res_path.exists():

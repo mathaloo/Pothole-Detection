@@ -5,7 +5,7 @@ import json
 import csv
 from pathlib import Path
 
-with open("testing/to_bev_test_cases.json", "r") as f:
+with open("testing/to_bev/to_bev_test_cases.json", "r") as f:
     test_cases = json.load(f)
 
 new_recs = []
@@ -35,7 +35,7 @@ for tc in test_cases:
     new_recs.append(results)
     results = None
 
-res_path = Path("testing/results_to_bev.csv")
+res_path = Path("testing/to_bev/results_to_bev.csv")
 old_recs = []
 
 if res_path.exists():

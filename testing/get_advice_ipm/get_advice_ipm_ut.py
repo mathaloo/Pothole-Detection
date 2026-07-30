@@ -21,7 +21,7 @@ def fake_to_bev(x, y):
 
 pd.to_bev = fake_to_bev 
 
-with open("testing/get_advice_test_cases.json", "r") as f:
+with open("testing/get_advice/get_advice_test_cases.json", "r") as f:
     test_cases = json.load(f)
 
 new_recs = []
@@ -66,7 +66,7 @@ for tc in test_cases:
     new_recs.append(results)
     results = None
 
-res_path = Path("testing/results_get_advice.csv")
+res_path = Path("testing/get_advice/results_get_advice.csv")
 old_recs = []
 
 if res_path.exists():
