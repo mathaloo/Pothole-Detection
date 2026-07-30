@@ -20,7 +20,8 @@
         "color": [255, 255, 255],
         "thickness": null,
         "exp_change": true
-    },{
+    },
+    {
         "name": "UT_PC_03",
         "img_w": 300,
         "img_h": 300,
@@ -30,7 +31,8 @@
         "color": [255, 255, 255],
         "thickness": null,
         "exp_change": true
-    },{
+    },
+    {
         "name": "UT_PC_04",
         "img_w": 300,
         "img_h": 300,
@@ -40,7 +42,8 @@
         "color": [255, 255, 255],
         "thickness": null,
         "exp_change": true
-    },{
+    },
+    {
         "name": "UT_PC_05",
         "img_w": 300,
         "img_h": 300,
