@@ -1,0 +1,12 @@
+Ran: 2026-07-30 16:58:52.639866
+Name,Input Image Width,Input Image Height,Text,CX,Y,Color,Thickness,Expected Change,Actual Change,Status
+UT_PC_01,300,300,Testing,150,150,"[255, 255, 255]",Default,True,True,Passed
+UT_PC_02,300,300,More Testing,150,150,"[255, 255, 255]",Default,True,True,Passed
+UT_PC_03,300,300,Testing,75,100,"[255, 255, 255]",Default,True,True,Passed
+UT_PC_04,300,300,Testing,225,200,"[255, 255, 255]",Default,True,True,Passed
+UT_PC_05,300,300,,150,150,"[255, 255, 255]",Default,False,False,Passed
+UT_PC_06,300,300,,150,150,"[255, 255, 255]",10,False,False,Passed
+UT_PC_07,300,300,Testing,150,150,"[255, 255, 255]",4,True,True,Passed
+UT_PC_08,50,50,Testing,25,25,"[255, 255, 255]",Default,True,True,Passed
+UT_PC_09,50,50,Testing,250,25,"[255, 255, 255]",Default,False,False,Passed
+UT_PC_10,50,50,Testing,25,150,"[255, 255, 255]",Default,False,False,Passed
