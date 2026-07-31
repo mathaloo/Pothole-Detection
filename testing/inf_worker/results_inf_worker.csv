@@ -1,0 +1,19 @@
+Ran: 2026-07-31 02:35:20.776275
+Name,Input No. of Frames,Input Skip Rate,Expected Inference Ran,Expected Frame Colors,Actual Inference Ran,Actual Frame Colors,Status
+UT_IW_01,1,1,True,['black'],False,[],Failed
+UT_IW_02,2,1,True,"['black', 'white']",False,[],Failed
+UT_IW_03,4,1,True,"['black', 'white', 'black', 'white']",True,['black'],Failed
+UT_IW_04,2,2,True,['black'],False,[],Failed
+UT_IW_05,4,2,True,"['black', 'white']",True,"['white', 'black']",Failed
+UT_IW_06,0,1,False,[],False,[],Failed
+UT_IW_07,0,2,False,[],False,[],Failed
+
+Ran: 2026-07-31 02:24:18.780365
+Name,Input No. of Frames,Input Skip Rate,Expected Inference Ran,Expected Frame Colors,Actual Inference Ran,Actual Frame Colors,Status
+UT_IW_01,1,1,True,['black'],False,[],Failed
+UT_IW_02,2,1,True,"['black', 'white']",False,[],Failed
+UT_IW_03,4,1,True,"['black', 'white', 'black', 'white']",False,[],Failed
+UT_IW_04,2,2,True,['black'],False,[],Failed
+UT_IW_05,4,2,True,"['black', 'white']",False,[],Failed
+UT_IW_06,0,1,False,[],False,[],Failed
+UT_IW_07,0,2,False,[],False,[],Failed
