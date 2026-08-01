@@ -8,7 +8,7 @@ import threading
 import time
 
 b_frame = np.zeros((640, 640, 3), dtype=np.uint8)
-w_frame = np.ones((640, 640, 3), dtype=np.uint8)
+w_frame = np.full((640, 640, 3), 255, dtype=np.uint8)
 frames = []
 new_recs = []
 
@@ -22,13 +22,12 @@ for tc in test_cases:
 
     # (Matt): goal is to only read alternating frame colors once per skip
     for i in range(0, tc["num_imgs"], tc["skip"]):
-        if len(frames) == 0 or np.array_equal(frames[-1][0, 0], [0, 0, 0]):
-            frames += [w_frame] * tc["skip"]
-        else:
+        if len(frames) == 0 or np.array_equal(frames[-1][0, 0], [255, 255, 255]):
             frames += [b_frame] * tc["skip"]
+        else:
+            frames += [w_frame] * tc["skip"]
 
-    STOP = object()    # creates stop object
-    frames = frames[:tc["num_imgs"]] + [STOP]
+    frames = frames[:tc["num_imgs"]]
 
     iw.stop_event = threading.Event()
     iw.latest_frame = [None]
@@ -36,26 +35,43 @@ for tc in test_cases:
     iw.lock = threading.Lock()
     model_results = []
 
+    print(f"TC: {tc["name"]}")
+
     worker = threading.Thread(target=iw.inference_worker, daemon=True)
     worker.start()
 
-    for f in frames:
-        if f is STOP:
-            iw.stop_event.set()
-            break
+    # (Matt): this block is to warm up the inference model since the first frame takes the longest to complete (likely due to initialization overhead)
+    with iw.lock:
+        iw.latest_frame[0] = np.zeros((640, 640, 3), dtype=np.uint8)
+    while iw.latest_result[0] is None:
+        time.sleep(0.001)
+    with iw.lock:
+        iw.latest_result[0] = None  # resets it for the test case
+        time.sleep(0.5)
+        iw.latest_result[0] = None
 
+    for f in frames:
         with iw.lock:
+            # For testing
+            print("locking latest_frame in test runner")
             iw.latest_frame[0] = f
 
         time.sleep(1 / 30)
 
         with iw.lock:
+            # For testing
+            print("locking latest_result in test runner")
+
             if iw.latest_result[0] is None:
                 model_results.append((None, None))
             else:
                 model_results.append(iw.latest_result[0])
 
+    iw.stop_event.set()
+
     worker.join()
+
+    print()
 
     act_colors = []
     act_inf_results = False
@@ -66,6 +82,7 @@ for tc in test_cases:
                 act_colors.append("black")
             else:
                 act_colors.append("white")
+
         # if inference runs once, it is true
         if mr[1] is not None:
             act_inf_results = True
@@ -74,8 +91,9 @@ for tc in test_cases:
     results["act_colors"] = act_colors
 
     check_colors = tc["exp_frames"] == act_colors
+    check_inf_ran = tc["exp_inference_ran"] == act_inf_results
 
-    if check_colors and act_inf_results:
+    if check_colors and check_inf_ran:
         results["status"] = "Passed"
     else:
         results["status"] = "Failed"

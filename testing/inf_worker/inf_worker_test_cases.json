@@ -3,49 +3,49 @@
         "name": "UT_IW_01",
         "num_imgs": 1,
         "skip": 1,
-        "exp_inference_ran": "True",
+        "exp_inference_ran": true,
         "exp_frames": ["black"]
     },
     {
         "name": "UT_IW_02",
         "num_imgs": 2,
         "skip": 1,
-        "exp_inference_ran": "True",
+        "exp_inference_ran": true,
         "exp_frames": ["black", "white"]
     },
     {
         "name": "UT_IW_03",
         "num_imgs": 4,
         "skip": 1,
-        "exp_inference_ran": "True",
+        "exp_inference_ran": true,
         "exp_frames": ["black", "white", "black", "white"]
     },
     {
         "name": "UT_IW_04",
         "num_imgs": 2,
         "skip": 2,
-        "exp_inference_ran": "True",
+        "exp_inference_ran": true,
         "exp_frames": ["black"]
     },
     {
         "name": "UT_IW_05",
         "num_imgs": 4,
         "skip": 2,
-        "exp_inference_ran": "True",
+        "exp_inference_ran": true,
         "exp_frames": ["black", "white"]
     },
     {
         "name": "UT_IW_06",
         "num_imgs": 0,
         "skip": 1,
-        "exp_inference_ran": "False",
+        "exp_inference_ran": false,
         "exp_frames": []
     },
     {
         "name": "UT_IW_07",
         "num_imgs": 0,
         "skip": 2,
-        "exp_inference_ran": "False",
+        "exp_inference_ran": false,
         "exp_frames": []
     }
 ]
