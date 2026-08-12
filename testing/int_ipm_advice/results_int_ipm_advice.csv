@@ -1,0 +1,14 @@
+Ran: 2026-08-11 20:42:12.959581
+Name,Input Width,Input Height,Input BEV Width,Input BEV Height,XYXY Array,Center Points,Confidence Array,Expected Advice,Actual BEV Coords,Actual Advice,Actual Lateral,Actual Dist,Status
+UT_IIA_01,1280,720,320,400,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_02,1480,720,320,400,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_03,1280,920,320,400,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_04,1280,720,520,400,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_05,1280,720,320,600,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_06,1080,620,420,500,"[[0, 0, 100, 100]]","[[50, 100]]",[0.9],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_07,1280,720,320,400,"[[1180, 200, 1280, 400]]","[[1230, 400]]",[0.9],SHIFT LEFT,In Bounds,SHIFT LEFT,Valid,Valid,Passed
+UT_IIA_08,1280,720,320,400,"[[0, 0, 100, 100]]","[[50, 100]]",[0.1],SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_09,1280,720,320,400,"[[0, 0, 100, 100], [1180, 200, 1280, 400]]","[[50, 100], [1230, 400]]","[0.9, 0.2]",SHIFT RIGHT,In Bounds,SHIFT RIGHT,Valid,Valid,Passed
+UT_IIA_10,1280,720,320,400,"[[0, 0, 100, 100], [1180, 200, 1280, 400]]","[[50, 100], [1230, 400]]","[0.2, 0.9]",SHIFT LEFT,In Bounds,SHIFT LEFT,Valid,Valid,Passed
+UT_IIA_11,1280,720,320,400,"[[540, 0, 740, 100]]","[[640, 100]]",[0.9],SLOW DOWN,In Bounds,SLOW DOWN,Valid,Valid,Passed
+UT_IIA_12,1280,720,320,400,[],[],[],,In Bounds,,Valid,Valid,Passed

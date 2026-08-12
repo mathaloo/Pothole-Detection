@@ -1,0 +1,134 @@
+[
+    {
+        "name": "UT_IIA_01",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_02",
+        "width": 1480,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_03",
+        "width": 1280,
+        "height": 920,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_04",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 520,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_05",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 600,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_06",
+        "width": 1080,
+        "height": 620,
+        "bev_w": 420,
+        "bev_h": 500,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_07",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[1180, 200, 1280, 400]],
+        "centers": [[1230,400]],
+        "conf_arr": [0.9],
+        "exp_advice": "SHIFT LEFT"
+    },
+    {
+        "name": "UT_IIA_08",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100]],
+        "centers": [[50,100]],
+        "conf_arr": [0.1],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_09",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100], [1180, 200, 1280, 400]],
+        "centers": [[50,100], [1230,400]],
+        "conf_arr": [0.9, 0.2],
+        "exp_advice": "SHIFT RIGHT"
+    },
+    {
+        "name": "UT_IIA_10",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[0, 0, 100, 100], [1180, 200, 1280, 400]],
+        "centers": [[50,100], [1230,400]],
+        "conf_arr": [0.2, 0.9],
+        "exp_advice": "SHIFT LEFT"
+    },
+    {
+        "name": "UT_IIA_11",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [[540, 0, 740, 100]],
+        "centers": [[640,100]],
+        "conf_arr": [0.9],
+        "exp_advice": "SLOW DOWN"
+    },
+    {
+        "name": "UT_IIA_12",
+        "width": 1280,
+        "height": 720,
+        "bev_w": 320,
+        "bev_h": 400,
+        "xyxy_arr": [],
+        "centers": [],
+        "conf_arr": [],
+        "exp_advice": null
+    }
+]
